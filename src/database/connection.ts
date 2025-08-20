@@ -1,6 +1,9 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 import * as schema from "./schema";
+import { config } from "dotenv";
+
+config();
 
 // Get database URL from environment variables
 const databaseUrl = process.env.DATABASE_URL;
